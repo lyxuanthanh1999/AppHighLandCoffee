@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment"
+    android:background="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollviewbanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ViewFlipper
+                    android:id="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    >
+                </ViewFlipper>
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textviewLoaiMon"
+                        android:text="Loại Món"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5sp"
+                        />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/loaimonrec"
+                        android:layout_width="match_parent"
+                        android:layout_height="255dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textviewTinTuc"
+                        android:text="Tin Tức"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tintucrec"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textviewTrachNhiemCongDong"
+                        android:text="Trắc Nhiệm Cộng Đồng"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5sp"
+                        />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tracnhiemrec"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

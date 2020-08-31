@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/imageViewConfirmCart"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tvTenThucDonConfirmCart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:text="Tên Product"
+                                />
+                            <TextView
+                                android:id="@+id/tvGiaThucDonConfirmCart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorAccent"
+                                android:padding="6dp"
+                                android:text="49.000 VNĐ"
+                                android:background="@drawable/test_ground"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_weight="2">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="italic"
+                                    android:text="Đường : "
+                                    android:layout_marginRight="8dp"
+                                    android:textColor="@color/colorPrimary"
+                                    />
+                                <TextView
+                                    android:id="@+id/tvDuongConfirmCart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorPrimary"
+                                    android:padding="6dp"
+                                    android:layout_marginRight="50dp"
+                                    android:text="Đường : "
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="italic"
+                                    android:text="Đá : "
+                                    android:layout_marginRight="8dp"
+                                    android:textColor="@color/colorPrimary"
+                                    />
+                                <TextView
+                                    android:id="@+id/tvDaConfirmCart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textStyle="italic"
+                                    android:textColor="@color/colorPrimary"
+                                    android:padding="6dp"
+                                    android:text="Đá : "
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

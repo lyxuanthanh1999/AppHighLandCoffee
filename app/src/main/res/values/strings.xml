@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HighLand Coffee</string>
+    <string name="getThucDon">http://192.168.0.158:8080/sever/getThucDonsByMaLoai.php?MaLoaiMon=%d</string>
+    <string name="getTNCD">http://192.168.0.158:8080/sever/getTrachNhiemCongDongBYMaCongDong.php?MaTNCD=%d</string>
+    <string name="getTinTuc">http://192.168.0.158:8080/sever/getTinTucByMaTinTuc.php?MaTin=%d</string>
+    <string name="getMaDatHang">http://192.168.0.158:8080/sever/getMaDatHang.php?uid=%s</string>
+    <string name="getChiTietDatHang">http://192.168.0.158:8080/sever/getLichSuMuaHang.php?uid=%s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
